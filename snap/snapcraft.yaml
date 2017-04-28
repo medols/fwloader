@@ -1,0 +1,21 @@
+name: fwloader
+version: 0.0.1
+summary: An FPGA image loader for ZTEX
+archictectures: [amd64, armhf]
+description: Firmware / Bitstream loader for ZTEX USB-FPGA Modules
+confinement: devmode
+grade: stable
+
+apps:
+ fwloader:
+   command: bin/wrapper
+   plugs: 
+     - raw-usb
+
+parts:
+    local:
+        plugin: ant
+        source: .
+    wrapper:
+        plugin: make
+        source: .
