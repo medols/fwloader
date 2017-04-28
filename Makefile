@@ -5,4 +5,3 @@ all:
 install:
 	install -d -m755  $(DESTDIR)/bin/
 	install -m755 wrapper $(DESTDIR)/bin/wrapper
-	install -m755 sh $(DESTDIR)/bin/sh
