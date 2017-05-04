@@ -3,7 +3,7 @@ version: 0.0.1
 summary: An FPGA image loader for ZTEX
 architectures: [amd64, armhf]
 description: Firmware / Bitstream loader for ZTEX USB-FPGA Modules
-confinement: devmode
+confinement: strict #devmode
 grade: stable
 
 apps:
@@ -11,6 +11,10 @@ apps:
    command: bin/wrapper
    plugs: 
      - raw-usb
+     - home
+     - mount-observe
+     - network-control
+     - network-bind
 
 parts:
     local:
