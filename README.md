@@ -1,5 +1,7 @@
 # Fwloader Snap
 
+[![Snap Status](https://build.snapcraft.io/badge/medols/fwloader.svg)](https://build.snapcraft.io/user/medols/fwloader)
+
 ## Snap content
 
 Firmware and bitstream loader for ZTEX USB-FPGA Modules.
